@@ -2,13 +2,19 @@
 
 :root {
     --primary: 228, 1, 35;
-    --secondary: #1677DB;
+    --secondary: 22, 119, 219;
     --intermediate: #9B9495;
-    --dark: #140003;
-    --light: #FAF0F2;
+    --dark: 20, 0, 3;
+    --light: 255, 252, 253;
 
     --bs-primary-rgb: var(--primary);
-    --bs-primary: var(--bs-primary-rgb);
+    --bs-primary: rgb(var(--bs-primary-rgb));
+    --bs-secondary-rgb: var(--secondary);
+    --bs-secondary: rgb(var(--bs-secondary-rgb));    
+    --bs-light-rgb: var(--light);
+    --bs-light: rgb(var(--bs-light-rgb));    
+    --bs-dark-rgb: var(--dark);
+    --bs-dark: rgb(var(--bs-dark-rgb));
     
     --title-font: 'K2D', sans-serif;
     --text-font: 'Roboto', sans-serif;
