@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;300;400;700&family=Roboto:wght@100;300;400;700&display=swap');
+
+:root {
+    --primary: #E40021;
+    --secondary: #1677DB;
+    --intermediate: #9B9495;
+    --dark: #140003;
+    --light: #FAF0F2;
+    
+    --title-font: 'K2D', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+    --text-size: 1.2rem;
+}
+
+body {
+    color: var(--dark);
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+}
+
+h1, h2, h3 {
+    font-family: var(--title-font);
+    color: var(--primary);
+}
+
+
+
