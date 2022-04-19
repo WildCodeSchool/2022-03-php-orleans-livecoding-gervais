@@ -5,6 +5,10 @@
 	| Produits
 {% endblock %}
 
+{% block stylesheet %}
+    <link rel="stylesheet" href="assets/css/product.css">
+{% endblock %}
+
 {% block content %}
 	<main class="container-fluid">
 		<h1>Produits</h1>
@@ -18,7 +22,7 @@
 							<p class="card-text">
 								{{ product.description }}
 							</p>
-							<div>{{ product.price }}€</div>
+							<div class="price position-absolute top-0 end-0 m-3">{{ product.price }}€</div>
 						</figcaption>
 					</figure>
 				</div>
