@@ -74,3 +74,5 @@ ENGINE = InnoDB;
 INSERT INTO `product` (`name`, `price`, `description`) VALUES ('raquette', '100', 'une raquette de tennis');
 INSERT INTO `product` (`name`, `price`, `description`) VALUES ('balle de tennis', '5', 'jaune');
 INSERT INTO `product` (`name`, `price`, `description`) VALUES ('patin à glace', '50', 'ça glisse');
+INSERT INTO `product` (`name`, `price`, `description`) VALUES ('product4', '50', 'description');
+INSERT INTO `product` (`name`, `price`, `description`) VALUES ('product5', '50', 'description');

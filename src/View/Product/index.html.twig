@@ -1,9 +1,28 @@
 {% extends 'layout.html.twig' %}
 
-{% block title %}{{ parent() }} | Produits {% endblock %}
+{% block title %}
+	{{ parent() }}
+	| Produits
+{% endblock %}
 
 {% block content %}
-    <main class="container-fluid">
-        <h1>Produits</h1>
-    </main>
+	<main class="container-fluid">
+		<h1>Produits</h1>
+		<div class="row">
+			{% for product in products %}
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<figure class="card">
+						<img src="assets/images/sport.png" class="card-img-top" alt="">
+						<figcaption class="card-body">
+							<h2>{{ product.name }}</h2>
+							<p class="card-text">
+								{{ product.description }}
+							</p>
+							<div>{{ product.price }}€</div>
+						</figcaption>
+					</figure>
+				</div>
+			{% endfor %}
+		</div>
+	</main>
 {% endblock %}
