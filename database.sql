@@ -61,3 +61,16 @@ ALTER TABLE `item`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+CREATE TABLE IF NOT EXISTS `product` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  `price` FLOAT NULL,
+  `description` TEXT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+INSERT INTO `product` (`name`, `price`, `description`) VALUES ('raquette', '100', 'une raquette de tennis');
+INSERT INTO `product` (`name`, `price`, `description`) VALUES ('balle de tennis', '5', 'jaune');
+INSERT INTO `product` (`name`, `price`, `description`) VALUES ('patin à glace', '50', 'ça glisse');
