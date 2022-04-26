@@ -31,3 +31,11 @@ h1, h2, h3 {
     font-family: var(--title-font);
     color: var(--bs-primary);
 }
+
+.btn-primary {
+    background-color: var(--bs-primary);
+}
+
+.alert:empty {
+    display: none;
+}

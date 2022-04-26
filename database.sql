@@ -83,4 +83,4 @@ CREATE TABLE `user` (
   `password` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`));
 
-INSERT INTO `user` (`email`, `password`) VALUES ('admin@gervais.com', 'admin');
+INSERT INTO `user` (`email`, `password`) VALUES ('admin@gervais.com', '$2y$10$8FvTurQwy0q3WqMi/GcNpO1MjwMqUnesFzl7Mf7otxcxDHn9cBBzO');

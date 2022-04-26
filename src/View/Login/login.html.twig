@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	| Login
+{% endblock %}
+
+{% block content %}
+	<main class="container">
+		<h1>Login</h1>
+        <ul class="alert alert-danger">
+        {%- for error in errors -%}
+            <li>{{ error }}</li>
+        {%- endfor -%}
+        </ul>
+		<form method="post" action="" novalidate>
+			<div class="mb-3">
+				<label class="form-label" for="email">Email</label>
+				<input class="form-control" type="email" id="email" name="email" required>
+			</div>
+			<div class="mb-3">
+				<label class="form-label" for="password">Mot de passe</label>
+				<input class="form-control" type="password" id="password" name="password" required>
+			</div>
+			<button class="btn btn-primary">S'identifier</button>
+		</form>
+	</main>
+{% endblock %}
