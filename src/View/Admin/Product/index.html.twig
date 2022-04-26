@@ -1,0 +1,32 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	| Produits
+{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="assets/css/product.css">
+{% endblock %}
+
+{% block content %}
+	<main class="container-fluid">
+		<h1>Admin Produits</h1>
+		<div class="row">
+			{% for product in products %}
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<figure class="card">
+						<img src="assets/images/sport.png" class="card-img-top" alt="">
+						<figcaption class="card-body">
+							<h2>{{ product.name }}</h2>
+							<p class="card-text">
+								{{ product.description }}
+							</p>
+							<div class="price position-absolute top-0 end-0 m-3">{{ product.price }}€</div>
+						</figcaption>
+					</figure>
+				</div>
+			{% endfor %}
+		</div>
+	</main>
+{% endblock %}
