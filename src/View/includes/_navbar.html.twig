@@ -11,6 +11,13 @@
 				<a class="text-primary nav-link" href="#shop">Boutique</a>
 				<a class="text-primary nav-link" href="/produits">Produits</a>
 				<a class="text-primary nav-link" href="#contact">Contact</a>
+				{% if user is not null %}
+					Welcome
+					{{ user.email }}
+					<a class="btn btn-danger" href="/logout">Déconnexion</a>
+				{% else %}
+					<a class="btn btn-success" href="/login">Se connecter</a>
+				{% endif %}
 			</div>
 		</div>
 	</div>
