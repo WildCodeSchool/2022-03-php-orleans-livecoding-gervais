@@ -76,3 +76,11 @@ INSERT INTO `product` (`name`, `price`, `description`) VALUES ('balle de tennis'
 INSERT INTO `product` (`name`, `price`, `description`) VALUES ('patin à glace', '50', 'ça glisse');
 INSERT INTO `product` (`name`, `price`, `description`) VALUES ('product4', '50', 'description');
 INSERT INTO `product` (`name`, `price`, `description`) VALUES ('product5', '50', 'description');
+
+CREATE TABLE `user` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `email` VARCHAR(255) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`));
+
+INSERT INTO `user` (`email`, `password`) VALUES ('admin@gervais.com', 'admin');
