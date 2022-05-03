@@ -10,12 +10,12 @@
     --bs-primary-rgb: var(--primary);
     --bs-primary: rgb(var(--bs-primary-rgb));
     --bs-secondary-rgb: var(--secondary);
-    --bs-secondary: rgb(var(--bs-secondary-rgb));    
+    --bs-secondary: rgb(var(--bs-secondary-rgb));
     --bs-light-rgb: var(--light);
-    --bs-light: rgb(var(--bs-light-rgb));    
+    --bs-light: rgb(var(--bs-light-rgb));
     --bs-dark-rgb: var(--dark);
     --bs-dark: rgb(var(--bs-dark-rgb));
-    
+
     --title-font: 'K2D', sans-serif;
     --text-font: 'Roboto', sans-serif;
     --text-size: 1.2rem;
@@ -27,7 +27,9 @@ body {
     font-size: var(--text-size);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--title-font);
     color: var(--bs-primary);
 }
