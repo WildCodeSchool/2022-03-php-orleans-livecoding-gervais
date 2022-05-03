@@ -1,4 +1,9 @@
 {# TODO : manage errors display #}
+<ul>
+{% for error in errors %}
+	<li>{{error}}</li>
+{% endfor %}
+</ul>
 
 <form method="post">
 	<input type="hidden" value="{{ item.id }}" name="id">
