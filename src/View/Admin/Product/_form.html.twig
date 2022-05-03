@@ -4,13 +4,16 @@
 	<li>{{error}}</li>
 {% endfor %}
 </ul>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
 	<input type="hidden" value="{{ product.id }}" name="id">
 	<label class="form-label" for="name">Nom</label>
 	<input class="form-control" type="text" value="{{ product.name }}" name="name" id="name">
 
 	<label class="form-label" for="price">Prix</label>
 	<input class="form-control" type="text" value="{{ product.price }}" name="price" id="price">
+
+	<label class="form-label" for="image">Image</label>
+	<input class="form-control" type="file" name="image" id="image">
 
 	<label class="form-label" for="description">Description</label>
 	<textarea class="form-control" name="description" id="description">{{ product.description }}</textarea>

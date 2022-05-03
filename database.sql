@@ -67,15 +67,16 @@ CREATE TABLE IF NOT EXISTS `product` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(255) NOT NULL,
   `price` FLOAT NULL,
+  `image` VARCHAR(255) NOT NULL,
   `description` TEXT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
-INSERT INTO `product` (`name`, `price`, `description`) VALUES ('raquette', '100', 'une raquette de tennis');
-INSERT INTO `product` (`name`, `price`, `description`) VALUES ('balle de tennis', '5', 'jaune');
-INSERT INTO `product` (`name`, `price`, `description`) VALUES ('patin à glace', '50', 'ça glisse');
-INSERT INTO `product` (`name`, `price`, `description`) VALUES ('product4', '50', 'description');
-INSERT INTO `product` (`name`, `price`, `description`) VALUES ('product5', '50', 'description');
+INSERT INTO `product` (`name`, `price`, `description`, `image`) VALUES ('raquette', '100', 'une raquette de tennis', '');
+INSERT INTO `product` (`name`, `price`, `description`, `image`) VALUES ('balle de tennis', '5', 'jaune', '');
+INSERT INTO `product` (`name`, `price`, `description`, `image`) VALUES ('patin à glace', '50', 'ça glisse', '');
+INSERT INTO `product` (`name`, `price`, `description`, `image`) VALUES ('product4', '50', 'description', '');
+INSERT INTO `product` (`name`, `price`, `description`, `image`) VALUES ('product5', '50', 'description', '');
 
 CREATE TABLE `user` (
   `id` INT NOT NULL AUTO_INCREMENT,
